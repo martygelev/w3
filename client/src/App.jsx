@@ -1,5 +1,13 @@
 import './App.css'
-import { Navbar, Footer, Services, Transactions, Welcome } from './components';
+import {
+  Navbar,
+  Footer,
+  Services,
+  Transactions,
+  Welcome
+} from "./components";
+import Blog from './components/Blog';
+
 
 
 const App = () => {
@@ -8,11 +16,17 @@ const App = () => {
       <div className="gradient-bg-welcome">
         <Navbar />
       </div>
-        <Welcome />
+      {/* <Welcome /> */}
+      <div className='w-96'>
+        <hr />
+        
+      <Blog />
+      <hr />
+      </div>
 
-      <Services />
-      <Transactions />
-      <Footer />
+      {/* <Services /> */}
+      {/* <Transactions /> */}
+      {/* <Footer /> */}
     </div>
   )
 }
