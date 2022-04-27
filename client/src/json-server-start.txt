@@ -1,0 +1,2 @@
+#Start Json-server
+npx json-server --watch data/blog.json --port 8888

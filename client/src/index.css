@@ -79,6 +79,35 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+input {
+  background-color: #9984f0;
+  border: 1px solid rgba(224, 221, 221, 0.3);
+  border-radius: 6px;
+  width: 333px;
+height: 40px;
+}
+
+div {
+  height: 10%;
+  margin: 1%;
+}
+
+textarea {
+    background-color: #755ed4;
+  border: 3px solid rgba(158, 123, 123, 0.3);
+  border-radius: 6px;
+  width: 333px;
+  height: 333px
+}
+
+button {
+  background-color: #0d6af5;
+  border: 3px solid rgba(158, 123, 123, 0.3);
+  border-radius: 10px;
+  width: 150px
+  
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

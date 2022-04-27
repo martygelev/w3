@@ -1,34 +1,34 @@
 import './App.css'
 import {
   Navbar,
-  Footer,
   Services,
   Transactions,
   Welcome
 } from "./components";
-import Blog from './components/Blog';
-
-
+import Blog from './components/Blog/Blog';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import BlogPost from './components/Blog/BlogPost';
+import CreateBlogPost from './components/Blog/CreateBlogPost';
 
 const App = () => {
   return (
-    <div className="min-h-screen">
-      <div className="gradient-bg-welcome">
-        <Navbar />
-      </div>
-      {/* <Welcome /> */}
-      <div className='w-96'>
-        <hr />
-        
-      <Blog />
-      <hr />
-      </div>
-
-      {/* <Services /> */}
-      {/* <Transactions /> */}
-      {/* <Footer /> */}
+    <div>
+      <BrowserRouter>
+        <div className="gradient-bg-welcome">
+          <Navbar />
+        </div>
+        <Routes>
+            <Route exact path="/" element={<Welcome />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/add" element={<CreateBlogPost />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/transactions" element={<Transactions />} />
+            {/* <Footer /> */}
+        </Routes>
+      </BrowserRouter>
     </div>
-  )
+  );
 }
 
 export default App

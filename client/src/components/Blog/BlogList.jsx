@@ -3,6 +3,7 @@ import Stack from "@mui/material/Stack";
 import Divider from "@mui/material/Divider";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
+import { Link } from 'react-router-dom';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -23,20 +24,12 @@ const BlogList = ({ blogs }) => {
         >
           {blogs.map((blog) => (
             <Item className="wd-300">
-              <div key={blog.id}>
-                <h2> {blog.title}</h2> with ID: <b>{blog.id}</b>
-                <h4>Written by {blog.author}</h4>
-                <p> {blog.body}</p>
-                <hr />
-                <div>
-                  <h3>Keywords:</h3>
-                  {blog.keywords.map((keyword) => (
-                    <p className="py-1 flex" key={keyword}>
-                      {keyword}
-                    </p>
-                  ))}
+                <div key={blog.id}>
+              <Link to={`/blog/${blog.id}`}>
+                  <h2> {blog.title}</h2> with ID: <b>{blog.id}</b>
+                  <h4>Written by {blog.author}</h4>
+              </Link>
                 </div>
-              </div>
             </Item>
           ))}
         </Stack>
