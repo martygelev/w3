@@ -3,7 +3,8 @@ import {
   Navbar,
   Services,
   Transactions,
-  Welcome
+  Welcome,
+  Footer
 } from "./components";
 import Blog from './components/Blog/Blog';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -15,7 +16,7 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <div className="gradient-bg-welcome">
+        <div className="gradient-bg-header">
           <Navbar />
         </div>
         <Routes>
@@ -26,8 +27,8 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/transactions" element={<Transactions />} />
           <Route path="*" element={<NotFound />} />
-          {/* <Footer /> */}
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

@@ -14,7 +14,9 @@ const Navbar = () => {
   return (
     <nav className="w-full flex md:justify-center justify-between items-center p-4">
       <div className="md:flex-[0.5] flex-initial justify-center items-center">
-        <img src={logo} alt="logo" className="w-32 cursor-pointer" />
+        <Link to="/">
+          <img src={logo} alt="logo" className="w-32 cursor-pointer" />
+        </Link>
       </div>
       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
         {["Transactions", "Services", "Blog"].map((item, index) => (
@@ -47,15 +49,13 @@ const Navbar = () => {
             <li className="text-xl w-full my-2">
               <AiOutlineClose onClick={() => setToggleMenu(false)} />
             </li>
-            {["Transactions", "Services", "Blog"].map(
-              (item, index) => (
-                <NavBarItem
-                  key={item + index}
-                  title={item}
-                  classprops="my-2 text-lg"
-                />
-              )
-            )}
+            {["Transactions", "Services", "Blog"].map((item, index) => (
+              <NavBarItem
+                key={item + index}
+                title={item}
+                classprops="my-2 text-lg"
+              />
+            ))}
           </ul>
         )}
       </div>
