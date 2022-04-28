@@ -1,57 +1,63 @@
 {
-    "blogs": [
-        {
-            "title": "Blog Post 1",
-            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            "author": "mario",
-            "id": "1",
-            "keywords": [
-                "lorem",
-                "web",
-                "blog"
-            ]
-        },
-        {
-            "title": "Blog Post 2",
-            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            "author": "stefan",
-            "id": "2",
-            "keywords": [
-                "web",
-                "blog"
-            ]
-        },
-        {
-            "title": "Blog Post 3",
-            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            "author": "pesho",
-            "id": "3",
-            "keywords": [
-                "blog",
-                "post"
-            ]
-        },
-        {
-            "title": "Blog Post 4",
-            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            "author": "ralica",
-            "id": "4",
-            "keywords": [
-                "lorem",
-                "web",
-                "blog"
-            ]
-        },
-        {
-            "title": "Blog Post 5",
-            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            "author": "mario",
-            "id": "5",
-            "keywords": [
-                "lorem",
-                "web",
-                "blog"
-            ]
-        }
-    ]
+  "blogs": [
+    {
+      "title": "Blog Post 1",
+      "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "author": "mario",
+      "id": "1",
+      "keywords": [
+        "lorem",
+        "web",
+        "blog"
+      ]
+    },
+    {
+      "title": "Blog Post 2",
+      "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "author": "stefan",
+      "id": "2",
+      "keywords": [
+        "web",
+        "blog"
+      ]
+    },
+    {
+      "title": "Blog Post 3",
+      "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "author": "pesho",
+      "id": "3",
+      "keywords": [
+        "blog",
+        "post"
+      ]
+    },
+    {
+      "title": "Blog Post 4",
+      "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "author": "ralica",
+      "id": "4",
+      "keywords": [
+        "lorem",
+        "web",
+        "blog"
+      ]
+    },
+    {
+      "title": "Blog Post 5",
+      "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "author": "mario",
+      "id": "5",
+      "keywords": [
+        "lorem",
+        "web",
+        "blog"
+      ]
+    },
+    {
+      "title": "React ",
+      "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "author": "Course ",
+      "id": "6"
+    }
+  ]
 }

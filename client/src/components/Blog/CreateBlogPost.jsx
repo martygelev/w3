@@ -1,15 +1,28 @@
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 const CreateBlogPost = () => {
     const [title, setTitle] = useState('');
     const [author, setAuthor] = useState('');
     const [body, setBody] = useState('');
-    const [keywords, setKeywords] = useState([]);
+    // const [keywords, setKeywords] = useState([]);
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    const route = useNavigate();
 
     const handleSubmit = (e) => {
+        setIsSubmitted(true);
         e.preventDefault();
-        const blog = { title, body, author, keywords };
-        console.log(blog);
+        const blog = { title, body, author };
+
+        fetch("http://localhost:8888/blogs", {
+            method: "POST",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(blog)
+        }).then(() => {
+            console.log("Blog post added");
+            setIsSubmitted(false);
+            route('/blog')
+        })
     }
 
     const handleClear = () => {
@@ -22,6 +35,7 @@ const CreateBlogPost = () => {
       <div>
         <form onSubmit={handleSubmit}>
           <div>
+            <label>Title</label>
             <input
               type="text"
               aria-label="title"
@@ -31,6 +45,7 @@ const CreateBlogPost = () => {
             />
           </div>
           <div>
+            <label>Author</label>
             <input
               type="text"
               aria-label="author"
@@ -40,13 +55,15 @@ const CreateBlogPost = () => {
             />
           </div>
           <div>
+            <label>Text</label>
             <textarea
               required
               value={body}
               onChange={(e) => setBody(e.target.value)}
             ></textarea>
           </div>
-          <button type="submit">Submit</button>
+          {!isSubmitted && <button type="submit">Submit</button>}
+          {isSubmitted && <button disabled>Adding blog post...</button>}
           <button onClick={handleClear}>Clear</button>
         </form>
       </div>
