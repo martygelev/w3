@@ -18,7 +18,11 @@ const App = () => {
       <BrowserRouter>
         <div className="gradient-bg-welcome">
           <Navbar />
-        <Routes>
+          <Welcome />
+          </div>
+          <Services />
+          <Transactions />
+        {/* <Routes>
           <Route exact path="/" element={<Welcome />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/add" element={<CreateBlogPost />} />
@@ -26,9 +30,8 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/transactions" element={<Transactions />} />
           <Route path="*" element={<NotFound />} />
-        </Routes>
+        </Routes> */}
         <Footer />
-        </div>
       </BrowserRouter>
     </div>
   );
