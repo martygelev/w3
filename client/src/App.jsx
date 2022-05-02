@@ -16,9 +16,8 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <div className="gradient-bg-header">
+        <div className="gradient-bg-welcome">
           <Navbar />
-        </div>
         <Routes>
           <Route exact path="/" element={<Welcome />} />
           <Route path="/blog" element={<Blog />} />
@@ -29,6 +28,7 @@ const App = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
+        </div>
       </BrowserRouter>
     </div>
   );

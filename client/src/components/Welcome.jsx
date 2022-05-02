@@ -20,18 +20,20 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 
 const Welcome = () => {
 
-  const {connectWallet, currentAccount} = useContext(TransactionContext);
+  const {connectWallet, currentAccount, formData, sendTransaction, handleChange} = useContext(TransactionContext);
 
   const handleSubmit = (e) => {
     const { addressTo, amount, keyword, message } = formData;
     e.preventDefault();
     if (!addressTo || !amount || !keyword || !message) return;
     console.log({ addressTo, amount, keyword, message });
+
+    sendTransaction();
   };
 
-  const handleChange = () => {
+  // const handleChange = () => {
     
-  }
+  // }
 
   const [isLoading, setIsLoading] = useState(false);
   return (
